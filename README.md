@@ -39,9 +39,3 @@ Compile to JS files first with: `lein cljsbuild once`
 
 To start a web server for the application (port 8080), simply run the main
 fn in api.secure: `lein run`
-
-## TODO
-
-- make UI friendlier (e.g. only show "Logout" when logged in)
-- address usability issues (e.g. login with non-existing user should have a friendly message)
-- etc.

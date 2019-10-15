@@ -28,7 +28,7 @@
     (is (= (:body response) "created"))))
 
 (defn create-news-and-assert-response [user-id news]
-  (let [response (non-secure-app (-> (mock/request :post (str "/api/news/" user-id) news)))]
+  (let [response (non-secure-app (mock/request :post (str "/api/news/" user-id) news))]
     (is (= (:status response) 201))
     (is (= (:body response) "created"))))
 
